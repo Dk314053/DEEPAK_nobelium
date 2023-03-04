@@ -13,3 +13,17 @@ git commit -m “Added a text file for demo” : Creates a commit with a relevan
 git push repo-link: pushes the commit to the specified remote repository
 git push --set-upstream origin (Only applicable when pushing a new branch for the first time to the same repository you are at)
 git branch -D branch-name-to-be-deleted : You have to checkout branch A first if you are trying to delete branch B. 
+Create access token here: Account > Setting > Developer Setting > Personal Access Token > Generate Access Token > Save the token somewhere
+git config –list : shows the content of git config file
+git config –global user.name “sabiha” : sets sabiha as user name in git config
+git config –global user.password “access_token” : sets access_token as user password in git config
+Create access token here: Account > Setting > Developer Setting > Personal Access Token > Generate Access Token > Save the token somewhere
+
+git config –list : shows the content of git config file
+git config –global user.name “sabiha” : sets sabiha as user name in git config
+git config –global user.password “access_token” : sets access_token as user password in git config
+
+Create access token here: Account > Setting > Developer Setting > Personal Access Token > Generate Access Token > Save the token somewhere
+git config –list : shows the content of git config file
+git config –global user.name “sabiha” : sets sabiha as user name in git config
+git config –global user.password “access_token” : sets access_token as user password in git config
