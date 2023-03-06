@@ -1,24 +1,23 @@
 import logo from './logo.svg';
-import './App.css';
-
+import Heading1 from './component/Heading1';
+import Heading2 from './component/Heading2';
+import Heading3 from './component/Heading3';
+import Button from './component/Button';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+ {/* challenge 1 */}
+      <h1>I am heading one ... from first component   </h1>
+      <h2>I am heading two ... from second component   </h2>
+      <h3>I am heading three ... from third component   </h3>
+      <button>Click me !!</button>
+      
+      {/* challenge 2 */}
+    <Heading1 />
+    <Heading2 />
+    <Heading3 />
+    <Button />
+     </>
   );
 }
 
