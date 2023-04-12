@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+.App{
+  width: 50%;
+  margin: auto;
+  border: 3px solid black;
+  position: relative;
+  background-color: orange;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App form{
   display: flex;
-  flex-direction: column;
+  width: 70%;
+  border: 2px solid black;
+  margin: auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+form button{
+  margin-top: 35px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(255, 174, 0);
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+form button:hover{
+  background-color: rgb(255, 102, 0);
+}
+
+
+form select{
+  width: 100%;
+}
+
+
+.input-div{
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.input-div select{
+  width: 80%;
+}
+
+.input-div input{
+  width: 80%;
+}
+
+.name-input{
+  
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.create-bill{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  background-color: rgb(109, 109, 209);
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s linear;
 }
 
-.App-link {
-  color: #61dafb;
+.create-bill:hover{
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border:3px solid black;
+  background-color: skyblue;
+}
+
+th,td{
+  border: 2px solid black;
+}
+th{
+  border: 2px solid black;
+}
+
+
+.div-container{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  border: 2px solid black;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: greenyellow;
+}
+
+
+.sum-div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.sum-div p{
+  font-weight: bold;
+  margin-left: 35px;
+  /* margin-right: 20px; */
+}
+.sum-div p:nth-child(2){
+  margin-right: 72px;
 }
