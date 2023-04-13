@@ -1,0 +1,31 @@
+.list{
+    text-align: center;
+    justify-content: center;
+    margin-left: 2px;
+    list-style-type: none;
+    width: 650px;
+    height: 55px;
+    border: 2px solid black;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.list:hover{
+    background-color: yellow;
+}
+.head1{
+font-size: 40px;
+text-decoration: underline;
+
+}
+.new{
+    width: 720px;
+    height: 480rem;
+    border: 2px solid black;
+  margin-left: 20px;
+  justify-content: center;
+  text-align: center;
+  background-color:greenyellow;
+
+}
