@@ -19,6 +19,7 @@ axiosdata()
  
     <div className="new">
       <h1>{error}</h1>
+       {/* //showing error */}
       {
         post.map((item)=>{
           return(
