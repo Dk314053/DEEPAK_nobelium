@@ -1,29 +1,53 @@
-import React from 'react'
-import { useState } from 'react'
-import MOCK_DATA from './MOCK_DATA .json'
+import { useState } from "react";
+import './SearchDropDown.css'
+var data = require("./MOCK_DATA.json");
 
-function SearchDropDown() {
-const [update,setUpdate]=useState("")
-let data=[]
-data=MOCK_DATA
+export default function SearchDropDown() {
+  const [value, setValue] = useState("");
+
+  const onChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  const onSearch = (searchTerm) => {
+    setValue(searchTerm);
+    // our api to fetch the search result
+    console.log("search ", searchTerm);
+  };
+
   return (
-    <div>
-        <h1>Searchable Dropdown</h1>
-        <div>
-<input type='text' value={update} onChange={(e)=>setUpdate(e.target.value)} />
-<button onClick={()=>handleClick(update)}>Search</button>
-</div>
-<div>
-{
-   data.map((ele)=>(
-   <div > {ele.CompanyName} </div>)
-   )
-}
+    <div className="App">
+      <h1>Search</h1>
 
+      <div className="search-container">
+        <div className="search-inner">
+          <input type="text" value={value} onChange={onChange} />
+          <button onClick={() => onSearch(value)}> Search </button>
+        </div>
+        <div className="dropdown">
+          {data
+            .filter((item) => {
+              const searchTerm = value.toLowerCase();
+              const fullName = item.full_name.toLowerCase();
 
-</div>
+              return (
+                searchTerm &&
+                fullName.startsWith(searchTerm) &&
+                fullName !== searchTerm
+              );
+            })
+            .slice(0, 10)
+            .map((item) => (
+              <div
+                onClick={() => onSearch(item.full_name)}
+                className="dropdown-row"
+                key={item.full_name}
+              >
+                {item.full_name}
+              </div>
+            ))}
+        </div>
+      </div>
     </div>
-  )
+  );
 }
-
-export default SearchDropDown

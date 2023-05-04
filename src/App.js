@@ -1,12 +1,12 @@
-import SearchDropDown from "./SearchDropDown/SearchDropDown";
-
-
-function App() {
+import React from 'react'
+import SearchDropDown from './SearchDropDown/SearchDropDown'
+const App = () => {
   return (
-    <div className="App">
-<SearchDropDown />
+    <div>
+
+      <SearchDropDown />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
