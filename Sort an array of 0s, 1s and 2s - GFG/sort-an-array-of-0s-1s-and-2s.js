@@ -67,28 +67,26 @@ class Solution {
     
     sort012(arr, N)
     {
-    let low=0;
-    let mid=0;
-    let high=N-1
-    let temp=0;
-    while (mid<=high){
-        if(arr[mid]==0){
-            temp=arr[low]
-            arr[low]=arr[mid]
-            arr[mid]=temp
-            low++
-            mid++
-        }else if(arr[mid]==1){
-            mid++
-        }
-        else{
-            temp=arr[mid]
-            arr[mid]=arr[high]
-            arr[high]=temp
-            high--
-        }
-    }
+let left=0;
+let right=N-1;
+let i=0;
+while(i<=right){
+    if(arr[i]==0){
+        let temp=arr[i]
+        arr[i]=arr[left]
+        arr[left]=temp;
+        i++
+        left++
+        
     
-    
+    }else if(arr[i]==2){
+        let temp=arr[i]
+        arr[i]=arr[right]
+        arr[right]=temp;
+        right--
+    }else{
+        i++
     }
+}
+}
 }
